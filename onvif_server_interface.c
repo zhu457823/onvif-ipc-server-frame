@@ -182,23 +182,22 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetVideoSourceConfigurations(struct soap* soap,
 						struct ns1__GetConfiguration *ns1__GetVideoSourceConfigurations, 
 						struct _ns1__GetVideoSourceConfigurationsResponse *ns1__GetVideoSourceConfigurationsResponse)
 {
-	
-	
+	return SOAP_OK;	
 }
 
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetVideoEncoderConfigurations(struct soap* soap, 
 						struct ns1__GetConfiguration *ns1__GetVideoEncoderConfigurations, 
 						struct _ns1__GetVideoEncoderConfigurationsResponse *ns1__GetVideoEncoderConfigurationsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
+
 /** Web service operation '__ns1__GetAudioSourceConfigurations' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetAudioSourceConfigurations(struct soap* soap, 
 						struct ns1__GetConfiguration *ns1__GetAudioSourceConfigurations, 
 						struct _ns1__GetAudioSourceConfigurationsResponse *ns1__GetAudioSourceConfigurationsResponse)
 {
-	
+	return SOAP_OK;
 }
 
 /** Web service operation '__ns1__GetAudioEncoderConfigurations' implementation, should return SOAP_OK or error code */
@@ -206,24 +205,23 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetAudioEncoderConfigurations(struct soap* soap
 						struct ns1__GetConfiguration *ns1__GetAudioEncoderConfigurations, 
 						struct _ns1__GetAudioEncoderConfigurationsResponse *ns1__GetAudioEncoderConfigurationsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
+
 /** Web service operation '__ns1__GetAnalyticsConfigurations' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetAnalyticsConfigurations(struct soap* soap, 
 						struct ns1__GetConfiguration *ns1__GetAnalyticsConfigurations, 
 						struct _ns1__GetAnalyticsConfigurationsResponse *ns1__GetAnalyticsConfigurationsResponse)
 {
-								
-								
+	return SOAP_OK;
 }
+
 /** Web service operation '__ns1__GetMetadataConfigurations' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetMetadataConfigurations(struct soap* soap, 
 						struct ns1__GetConfiguration *ns1__GetMetadataConfigurations, 
 						struct _ns1__GetMetadataConfigurationsResponse *ns1__GetMetadataConfigurationsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 
 /** Web service operation '__ns1__GetAudioOutputConfigurations' implementation, should return SOAP_OK or error code */
@@ -231,8 +229,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetAudioOutputConfigurations(struct soap* soap,
 						struct ns1__GetConfiguration *ns1__GetAudioOutputConfigurations,
 						struct _ns1__GetAudioOutputConfigurationsResponse *ns1__GetAudioOutputConfigurationsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetAudioDecoderConfigurations' implementation, should return SOAP_OK or error code */
@@ -240,17 +237,15 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetAudioDecoderConfigurations(struct soap* soap
 						struct ns1__GetConfiguration *ns1__GetAudioDecoderConfigurations, 
 						struct _ns1__GetAudioDecoderConfigurationsResponse *ns1__GetAudioDecoderConfigurationsResponse)
 {
-	
-	
-}	
+	return SOAP_OK;
+}
 					
 /** Web service operation '__ns1__SetVideoSourceConfiguration' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__SetVideoSourceConfiguration(struct soap* soap,
 						struct _ns1__SetVideoSourceConfiguration *ns1__SetVideoSourceConfiguration, 
 						struct ns1__SetConfigurationResponse *ns1__SetVideoSourceConfigurationResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__SetVideoEncoderConfiguration' implementation, should return SOAP_OK or error code */
@@ -258,8 +253,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__SetVideoEncoderConfiguration(struct soap* soap,
 						struct _ns1__SetVideoEncoderConfiguration *ns1__SetVideoEncoderConfiguration, 
 						struct ns1__SetConfigurationResponse *ns1__SetVideoEncoderConfigurationResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__SetAudioSourceConfiguration' implementation, should return SOAP_OK or error code */
@@ -267,8 +261,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__SetAudioSourceConfiguration(struct soap* soap,
 						struct _ns1__SetAudioSourceConfiguration *ns1__SetAudioSourceConfiguration,
 						struct ns1__SetConfigurationResponse *ns1__SetAudioSourceConfigurationResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__SetAudioEncoderConfiguration' implementation, should return SOAP_OK or error code */
@@ -276,8 +269,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__SetAudioEncoderConfiguration(struct soap* soap,
 						struct _ns1__SetAudioEncoderConfiguration *ns1__SetAudioEncoderConfiguration, 
 						struct ns1__SetConfigurationResponse *ns1__SetAudioEncoderConfigurationResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__SetMetadataConfiguration' implementation, should return SOAP_OK or error code */
@@ -285,17 +277,15 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__SetMetadataConfiguration(struct soap* soap,
 						struct _ns1__SetMetadataConfiguration *ns1__SetMetadataConfiguration, 
 						struct ns1__SetConfigurationResponse *ns1__SetMetadataConfigurationResponse)
 {
-	
-	
-}						
+	return SOAP_OK;
+}
 						
 /** Web service operation '__ns1__SetAudioOutputConfiguration' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__SetAudioOutputConfiguration(struct soap* soap, 
 						struct _ns1__SetAudioOutputConfiguration *ns1__SetAudioOutputConfiguration, 
 						struct ns1__SetConfigurationResponse *ns1__SetAudioOutputConfigurationResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__SetAudioDecoderConfiguration' implementation, should return SOAP_OK or error code */
@@ -303,8 +293,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__SetAudioDecoderConfiguration(struct soap* soap,
 						struct _ns1__SetAudioDecoderConfiguration *ns1__SetAudioDecoderConfiguration,
 						struct ns1__SetConfigurationResponse *ns1__SetAudioDecoderConfigurationResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetVideoSourceConfigurationOptions' implementation, should return SOAP_OK or error code */
@@ -312,8 +301,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetVideoSourceConfigurationOptions(struct soap*
 						struct ns1__GetConfiguration *ns1__GetVideoSourceConfigurationOptions, 
 						struct _ns1__GetVideoSourceConfigurationOptionsResponse *ns1__GetVideoSourceConfigurationOptionsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetVideoEncoderConfigurationOptions' implementation, should return SOAP_OK or error code */
@@ -321,8 +309,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetVideoEncoderConfigurationOptions(struct soap
 						struct ns1__GetConfiguration *ns1__GetVideoEncoderConfigurationOptions, 
 						struct _ns1__GetVideoEncoderConfigurationOptionsResponse *ns1__GetVideoEncoderConfigurationOptionsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetAudioSourceConfigurationOptions' implementation, should return SOAP_OK or error code */
@@ -330,8 +317,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetAudioSourceConfigurationOptions(struct soap*
 						struct ns1__GetConfiguration *ns1__GetAudioSourceConfigurationOptions, 
 						struct _ns1__GetAudioSourceConfigurationOptionsResponse *ns1__GetAudioSourceConfigurationOptionsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetAudioEncoderConfigurationOptions' implementation, should return SOAP_OK or error code */
@@ -339,8 +325,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetAudioEncoderConfigurationOptions(struct soap
 						struct ns1__GetConfiguration *ns1__GetAudioEncoderConfigurationOptions, 
 						struct _ns1__GetAudioEncoderConfigurationOptionsResponse *ns1__GetAudioEncoderConfigurationOptionsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetMetadataConfigurationOptions' implementation, should return SOAP_OK or error code */
@@ -348,8 +333,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetMetadataConfigurationOptions(struct soap* so
 						struct ns1__GetConfiguration *ns1__GetMetadataConfigurationOptions, 
 						struct _ns1__GetMetadataConfigurationOptionsResponse *ns1__GetMetadataConfigurationOptionsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetAudioOutputConfigurationOptions' implementation, should return SOAP_OK or error code */
@@ -357,8 +341,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetAudioOutputConfigurationOptions(struct soap*
 						struct ns1__GetConfiguration *ns1__GetAudioOutputConfigurationOptions, 
 						struct _ns1__GetAudioOutputConfigurationOptionsResponse *ns1__GetAudioOutputConfigurationOptionsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetAudioDecoderConfigurationOptions' implementation, should return SOAP_OK or error code */
@@ -366,8 +349,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetAudioDecoderConfigurationOptions(struct soap
 						struct ns1__GetConfiguration *ns1__GetAudioDecoderConfigurationOptions, 
 						struct _ns1__GetAudioDecoderConfigurationOptionsResponse *ns1__GetAudioDecoderConfigurationOptionsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetVideoEncoderInstances' implementation, should return SOAP_OK or error code */
@@ -375,16 +357,14 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetVideoEncoderInstances(struct soap* soap,
 						struct _ns1__GetVideoEncoderInstances *ns1__GetVideoEncoderInstances, 
 						struct _ns1__GetVideoEncoderInstancesResponse *ns1__GetVideoEncoderInstancesResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetStreamUri' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetStreamUri(struct soap* soap, 
 						struct _ns1__GetStreamUri *ns1__GetStreamUri, struct _ns1__GetStreamUriResponse *ns1__GetStreamUriResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__StartMulticastStreaming' implementation, should return SOAP_OK or error code */
@@ -392,8 +372,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__StartMulticastStreaming(struct soap* soap,
 						struct ns1__StartStopMulticastStreaming *ns1__StartMulticastStreaming, 
 						struct ns1__SetConfigurationResponse *ns1__StartMulticastStreamingResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__StopMulticastStreaming' implementation, should return SOAP_OK or error code */
@@ -401,8 +380,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__StopMulticastStreaming(struct soap* soap,
 						struct ns1__StartStopMulticastStreaming *ns1__StopMulticastStreaming,
 						struct ns1__SetConfigurationResponse *ns1__StopMulticastStreamingResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__SetSynchronizationPoint' implementation, should return SOAP_OK or error code */
@@ -410,16 +388,14 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__SetSynchronizationPoint(struct soap* soap,
 						struct _ns1__SetSynchronizationPoint *ns1__SetSynchronizationPoint, 
 						struct _ns1__SetSynchronizationPointResponse *ns1__SetSynchronizationPointResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetSnapshotUri' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetSnapshotUri(struct soap* soap, 
 						struct _ns1__GetSnapshotUri *ns1__GetSnapshotUri, struct _ns1__GetSnapshotUriResponse *ns1__GetSnapshotUriResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetVideoSourceModes' implementation, should return SOAP_OK or error code */
@@ -427,24 +403,22 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetVideoSourceModes(struct soap* soap,
 						struct _ns1__GetVideoSourceModes *ns1__GetVideoSourceModes, 
 						struct _ns1__GetVideoSourceModesResponse *ns1__GetVideoSourceModesResponse)
 {
-	
-	
-}						
+	return SOAP_OK;
+}
+
 /** Web service operation '__ns1__SetVideoSourceMode' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__SetVideoSourceMode(struct soap* soap,
 						struct _ns1__SetVideoSourceMode *ns1__SetVideoSourceMode,
 						struct _ns1__SetVideoSourceModeResponse *ns1__SetVideoSourceModeResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetOSDs' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetOSDs(struct soap* soap, 
 						struct _ns1__GetOSDs *ns1__GetOSDs, struct _ns1__GetOSDsResponse *ns1__GetOSDsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetOSDOptions' implementation, should return SOAP_OK or error code */
@@ -452,101 +426,88 @@ SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetOSDOptions(struct soap* soap,
 						struct _ns1__GetOSDOptions *ns1__GetOSDOptions,
 						struct _ns1__GetOSDOptionsResponse *ns1__GetOSDOptionsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__SetOSD' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__SetOSD(struct soap* soap, struct _ns1__SetOSD *ns1__SetOSD, 
 						struct ns1__SetConfigurationResponse *ns1__SetOSDResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__CreateOSD' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__CreateOSD(struct soap* soap, struct _ns1__CreateOSD *ns1__CreateOSD, 
 						struct _ns1__CreateOSDResponse *ns1__CreateOSDResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__DeleteOSD' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__DeleteOSD(struct soap* soap, struct _ns1__DeleteOSD *ns1__DeleteOSD, 
 						struct ns1__SetConfigurationResponse *ns1__DeleteOSDResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetMasks' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetMasks(struct soap* soap, struct _ns1__GetMasks *ns1__GetMasks,
 						struct _ns1__GetMasksResponse *ns1__GetMasksResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__GetMaskOptions' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__GetMaskOptions(struct soap* soap, struct _ns1__GetMaskOptions *ns1__GetMaskOptions,
 						struct _ns1__GetMaskOptionsResponse *ns1__GetMaskOptionsResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__SetMask' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__SetMask(struct soap* soap, struct _ns1__SetMask *ns1__SetMask, 
 						struct ns1__SetConfigurationResponse *ns1__SetMaskResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__CreateMask' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__CreateMask(struct soap* soap, struct _ns1__CreateMask *ns1__CreateMask, 
 						struct _ns1__CreateMaskResponse *ns1__CreateMaskResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__ns1__DeleteMask' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __ns1__DeleteMask(struct soap* soap, struct _ns1__DeleteMask *ns1__DeleteMask,
 						struct ns1__SetConfigurationResponse *ns1__DeleteMaskResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__tdn__Hello' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __tdn__Hello(struct soap* soap, struct wsdd__HelloType tdn__Hello, struct wsdd__ResolveType *tdn__HelloResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 
 /** Web service operation '__tdn__Bye' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __tdn__Bye(struct soap* soap, struct wsdd__ByeType tdn__Bye, struct wsdd__ResolveType *tdn__ByeResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 
 /** Web service operation '__tdn__Probe' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __tdn__Probe(struct soap* soap, struct wsdd__ProbeType tdn__Probe, struct wsdd__ProbeMatchesType *tdn__ProbeResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 
 /** Web service operation '__tds__GetServices' implementation, should return SOAP_OK or error code */
 SOAP_FMAC5 int SOAP_FMAC6 __tds__GetServices(struct soap* soap, struct _tds__GetServices *tds__GetServices, 
 						struct _tds__GetServicesResponse *tds__GetServicesResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__tds__GetServiceCapabilities' implementation, should return SOAP_OK or error code */
@@ -554,8 +515,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __tds__GetServiceCapabilities(struct soap* soap,
 						struct _tds__GetServiceCapabilities *tds__GetServiceCapabilities,
 						struct _tds__GetServiceCapabilitiesResponse *tds__GetServiceCapabilitiesResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__tds__GetDeviceInformation' implementation, should return SOAP_OK or error code */
@@ -563,7 +523,20 @@ SOAP_FMAC5 int SOAP_FMAC6 __tds__GetDeviceInformation(struct soap* soap,
 						struct _tds__GetDeviceInformation *tds__GetDeviceInformation, 
 						struct _tds__GetDeviceInformationResponse *tds__GetDeviceInformationResponse)
 {
-	
+	printf("-------------------------__tds__GetDeviceInformation------------------------------\n");
+	tds__GetDeviceInformationResponse->Manufacturer = (char*)soap_malloc(soap, sizeof(char) * 32);
+	tds__GetDeviceInformationResponse->Model = (char*)soap_malloc(soap, sizeof(char) * 32);
+	tds__GetDeviceInformationResponse->FirmwareVersion = (char*)soap_malloc(soap, sizeof(char) * 32);
+	tds__GetDeviceInformationResponse->SerialNumber = (char*)soap_malloc(soap, sizeof(char) * 32);
+	tds__GetDeviceInformationResponse->HardwareId = (char*)soap_malloc(soap, sizeof(char) * 32);
+
+	strcpy(tds__GetDeviceInformationResponse->Manufacturer, "HIKAUTO");
+	strcpy(tds__GetDeviceInformationResponse->Model, "HD1080P");
+	strcpy(tds__GetDeviceInformationResponse->FirmwareVersion, "v1.0.0");
+	strcpy(tds__GetDeviceInformationResponse->SerialNumber, "IPCTEST12345");
+	strcpy(tds__GetDeviceInformationResponse->HardwareId, "1.0");
+
+	return SOAP_OK;
 	
 }
 						
@@ -572,8 +545,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __tds__SetSystemDateAndTime(struct soap* soap,
 						struct _tds__SetSystemDateAndTime *tds__SetSystemDateAndTime, 
 						struct _tds__SetSystemDateAndTimeResponse *tds__SetSystemDateAndTimeResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__tds__GetSystemDateAndTime' implementation, should return SOAP_OK or error code */
@@ -581,8 +553,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __tds__GetSystemDateAndTime(struct soap* soap,
 						struct _tds__GetSystemDateAndTime *tds__GetSystemDateAndTime, 
 						struct _tds__GetSystemDateAndTimeResponse *tds__GetSystemDateAndTimeResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__tds__SetSystemFactoryDefault' implementation, should return SOAP_OK or error code */
@@ -590,8 +561,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __tds__SetSystemFactoryDefault(struct soap* soap,
 						struct _tds__SetSystemFactoryDefault *tds__SetSystemFactoryDefault, 
 						struct _tds__SetSystemFactoryDefaultResponse *tds__SetSystemFactoryDefaultResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__tds__UpgradeSystemFirmware' implementation, should return SOAP_OK or error code */
@@ -599,8 +569,7 @@ SOAP_FMAC5 int SOAP_FMAC6 __tds__UpgradeSystemFirmware(struct soap* soap,
 						struct _tds__UpgradeSystemFirmware *tds__UpgradeSystemFirmware, 
 						struct _tds__UpgradeSystemFirmwareResponse *tds__UpgradeSystemFirmwareResponse)
 {
-	
-	
+	return SOAP_OK;
 }
 						
 /** Web service operation '__tds__SystemReboot' implementation, should return SOAP_OK or error code */

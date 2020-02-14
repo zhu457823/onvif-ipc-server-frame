@@ -46,6 +46,7 @@ static void * OnvifDiscovered(void *arg)
 
 	while(1)
 	{
+		//等待客户端连接
 		u_fd = soap_accept(&UDPserverSoap);
 		if(!soap_valid_socket(u_fd))
 		{
@@ -53,6 +54,7 @@ static void * OnvifDiscovered(void *arg)
 			exit(1);
 		}
 		
+		//处理客户端发送的soap报文
 		if(SOAP_OK != soap_serve(&UDPserverSoap))
 		{
 			soap_print_fault(&UDPserverSoap, stderr);
@@ -72,13 +74,70 @@ static void * OnvifDiscovered(void *arg)
 }
 
 /*
+* @brief 创建tcp server，监听客户端发送的soap报文，并处理
+*/
+static void* OnvifWebServices(void* arg)
+{
+	struct soap tcpsersoap = { 0x0 };
+	int tcpfd = -1;
+	int accept_fd = -1;
+
+	soap_init(&tcpsersoap);
+	tcpsersoap.port = 5000;
+	tcpsersoap.bind_flags = SO_REUSEADDR;//socket 地址复用
+	soap_set_namespaces(&tcpsersoap, namespaces);
+
+	tcpfd = soap_bind(&tcpsersoap, ONVIF_TCP_IP, ONVIF_TCP_PORT, 10);
+	if (!soap_valid_socket(tcpfd))
+	{
+		printf("tcp serer socket bind failed!\n");
+		soap_print_fault(&tcpsersoap, stderr);
+		exit(1);
+	}
+
+	while (1)
+	{
+		accept_fd = soap_accept(&tcpsersoap);
+		if (!soap_valid_socket(accept_fd))
+		{
+			printf("tcp serer socket bind failed!\n");
+			soap_print_fault(&tcpsersoap, stderr);
+			exit(1);
+		}
+		printf("tcp server accept client connect, accept fd is %d\n", accept_fd);
+
+		//处理客户端发送的soap报文
+		if (SOAP_OK != soap_serve(&tcpsersoap))
+		{
+			soap_print_fault(&tcpsersoap, stderr);
+			printf("soap_print_fault\n");
+		}
+		
+		printf("IP = %u.%u.%u.%u\n", ((tcpsersoap.ip) >> 24) & 0xFF, ((tcpsersoap.ip) >> 16) & 0xFF,
+					((tcpsersoap.ip) >> 8) & 0xFF, (tcpsersoap.ip) & 0xFF);
+
+		soap_destroy(&tcpsersoap);
+		soap_end(&tcpsersoap);
+	}
+
+	//分离运行时环境
+	soap_done(&tcpsersoap);
+	pthread_exit(0);
+
+}
+
+/*
 * @brief 测试设备发现和soap报文监听接口
 */
 int main(int argc, char *argv[])
 {	
-	pthread_t discovery = 0;
-	pthread_create(&discovery, NULL, OnvifDiscovered, NULL);
-	pthread_join(discovery, 0);
+	pthread_t udpserverthread = 0;
+	pthread_t tcpserverthread = 0;
+	pthread_create(&udpserverthread, NULL, OnvifDiscovered, NULL);
+	pthread_create(&tcpserverthread, NULL, OnvifWebServices, NULL);
+
+	pthread_join(udpserverthread, 0);
+	pthread_join(tcpserverthread, 0);
 
 	return 0;
 }
