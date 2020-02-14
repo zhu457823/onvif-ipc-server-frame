@@ -94,6 +94,7 @@ static void* OnvifWebServices(void* arg)
 		soap_print_fault(&tcpsersoap, stderr);
 		exit(1);
 	}
+	printf("tcp socket bind success, tcpfd is %d\n", tcpfd);
 
 	while (1)
 	{
